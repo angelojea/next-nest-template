@@ -1,0 +1,15 @@
+{
+  "name": "aojea-next-app",
+  "version": "0.1.0",
+  "description": "",
+  "author": "AngelOjea",
+  "private": true,
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^9.1.0"
+  },
+  "scripts": {
+    "setup": "concurrently \"cd client; npm i;\" \"cd server; npm i;\"",
+    "start": "concurrently \"cd client; npm run dev;\" \"cd server; npm run start:dev;\""
+  }
+}
